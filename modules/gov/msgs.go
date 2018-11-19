@@ -106,15 +106,15 @@ func (msg MsgSubmitProposal) GetSigners() []sdk.AccAddress {
 //-----------------------------------------------------------
 // MsgDeposit
 type MsgDeposit struct {
-	ProposalID int64          `json:"proposal_id"` // ID of the proposal
-	Depositer  sdk.AccAddress `json:"depositer"`   // Address of the depositer
+	ProposalID uint64          `json:"proposal_id"` // ID of the proposal
+	Depositor  sdk.AccAddress `json:"depositor"`   // Address of the depositor
 	Amount     sdk.Coins      `json:"amount"`      // Coins to add to the proposal's deposit
 }
 
-func NewMsgDeposit(depositer sdk.AccAddress, proposalID int64, amount sdk.Coins) MsgDeposit {
+func NewMsgDeposit(depositor sdk.AccAddress, proposalID uint64, amount sdk.Coins) MsgDeposit {
 	return MsgDeposit{
 		ProposalID: proposalID,
-		Depositer:  depositer,
+		Depositor:  depositor,
 		Amount:     amount,
 	}
 }
@@ -126,8 +126,8 @@ func (msg MsgDeposit) Type() string  { return "deposit" }
 
 // Implements Msg.
 func (msg MsgDeposit) ValidateBasic() sdk.Error {
-	if len(msg.Depositer) == 0 {
-		return sdk.ErrInvalidAddress(msg.Depositer.String())
+	if len(msg.Depositor) == 0 {
+		return sdk.ErrInvalidAddress(msg.Depositor.String())
 	}
 	if !msg.Amount.IsValid() {
 		return sdk.ErrInvalidCoins(msg.Amount.String())
@@ -142,7 +142,7 @@ func (msg MsgDeposit) ValidateBasic() sdk.Error {
 }
 
 func (msg MsgDeposit) String() string {
-	return fmt.Sprintf("MsgDeposit{%s=>%v: %v}", msg.Depositer, msg.ProposalID, msg.Amount)
+	return fmt.Sprintf("MsgDeposit{%s=>%v: %v}", msg.Depositor, msg.ProposalID, msg.Amount)
 }
 
 // Implements Msg.
@@ -161,18 +161,18 @@ func (msg MsgDeposit) GetSignBytes() []byte {
 
 // Implements Msg.
 func (msg MsgDeposit) GetSigners() []sdk.AccAddress {
-	return []sdk.AccAddress{msg.Depositer}
+	return []sdk.AccAddress{msg.Depositor}
 }
 
 //-----------------------------------------------------------
 // MsgVote
 type MsgVote struct {
-	ProposalID int64          `json:"proposal_id"` // ID of the proposal
+	ProposalID uint64          `json:"proposal_id"` // ID of the proposal
 	Voter      sdk.AccAddress `json:"voter"`       //  address of the voter
 	Option     VoteOption     `json:"option"`      //  option from OptionSet chosen by the voter
 }
 
-func NewMsgVote(voter sdk.AccAddress, proposalID int64, option VoteOption) MsgVote {
+func NewMsgVote(voter sdk.AccAddress, proposalID uint64, option VoteOption) MsgVote {
 	return MsgVote{
 		ProposalID: proposalID,
 		Voter:      voter,

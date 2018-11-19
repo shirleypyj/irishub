@@ -2,9 +2,9 @@ package lcd
 
 const (
 	RestProposalID     = "proposalID"
-	RestDepositer      = "depositer"
+	RestDepositor      = "depositor"
 	RestVoter          = "voter"
 	RestProposalStatus = "status"
-	RestNumLatest      = "latest"
+	RestNumLimit       = "limit"
 	storeName          = "gov"
 )
