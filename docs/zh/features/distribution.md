@@ -2,7 +2,7 @@
 
 ## 简介
 
-该模块负责将收集的交易费和虚增的令牌分发给所有验证员和委托人。为了减少计算压力，引入了一种惰性分配策略。`惰性`意味着不会直接向贡献者自动支付利益。贡委托人或者验证人必须手动发送交易以取回其收益，否则，他们的收益将保留在全局收益池中。
+该模块负责将收集的交易费和虚增的token分发给所有验证人和委托人。为了减少计算压力，引入了一种惰性分配策略。`惰性`意味着不会直接向贡献者自动支付利益。委托人或者验证人必须手动发送交易以取回其收益，否则，他们的收益将保留在全局收益池中。
 
 ## 使用场景
 
@@ -25,11 +25,11 @@
         ```bash
         iriscli distribution withdraw-rewards --only-from-validator [address of validatorA] --from [key name of wallet A] --fee=0.004iris --chain-id=[chain-id]
         ```
-    2. 仅取回在所有验证人上的委托收益:
+    2. 取回在所有验证人上的委托收益:
         ```bash
         iriscli distribution withdraw-rewards --from [key name of wallet A] --fee=0.004iris --chain-id=[chain-id]
         ```
-    3. 仅取回在所有委托收益和验证人赚取的佣金:
+    3. 取回所有委托产生的收益和自己验证人赚取的佣金:
         ```bash
         iriscli distribution withdraw-rewards --is-validator=true --from [key name of wallet A] --fee=0.004iris --chain-id=[chain-id]
         ```
