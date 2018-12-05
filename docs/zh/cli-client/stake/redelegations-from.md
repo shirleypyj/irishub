@@ -2,7 +2,7 @@
 
 ## 描述
 
-基于某一验证者的所有重新委托查询
+基于某一验证者的所有转委托查询
 
 ## 用法
 
@@ -16,7 +16,7 @@ iriscli stake redelegations-from --help
 
 ## 示例
 
-基于某一验证者的所有重新委托查询
+基于某一验证者的所有转委托查询
 ```
 iriscli stake redelegations-from [validator-address]
 ```
