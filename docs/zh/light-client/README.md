@@ -28,7 +28,7 @@ IRISLCD有两个子命令:
 
 ## 示例命令
 
-1. 默认情况下，IRISLCD不信任连接全节点。但是如果您确定连接的完整节点是可信的，那么您应该在启动IRISLCD时加上`--trust-node`：
+1. 默认情况下，IRISLCD不信任连接全节点。但是如果您确定连接的全节点是可信的，那么您应该在启动IRISLCD时加上`--trust-node`：
 ```bash
 irislcd start --chain-id=<chain-id> --trust-node
 ```
@@ -121,7 +121,7 @@ IRISLCD启动以后，您可以在浏览器中访问`localhost:1317/swagger-ui/`
 
 8. 查询版本
 
-    1. `GET /version`: 获取IRISHUB的版本
+    1. `GET /version`: 获取IRIShub的版本
     2. `GET /node_version`: 查询全节点版本
 
 ## 特殊参数
@@ -141,5 +141,5 @@ IRISLCD启动以后，您可以在浏览器中访问`localhost:1317/swagger-ui/`
 | 参数名字        | 类型 | 默认值 | 优先级 | 功能描述                 |
 | --------------- | ---- | ------- |--------- |--------------------------- |
 | generate-only   | bool | false | 0 | 构建一个未签名的交易并返回 |
-| simulate        | bool | false | 1 | 用仿真的方式去执行交易 |
-| async           | bool | false | 2 | 用异步地方式广播交易  |
+| simulate        | bool | false | 1 | 用仿真方式去执行交易 |
+| async           | bool | false | 2 | 用异步方式广播交易  |
