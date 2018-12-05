@@ -2,7 +2,7 @@
 
 ## 介绍
 
-Unjail validator previously jailed for downtime
+恢复之前由于宕机被惩罚的验证者的身份
 
 ## 用法
 
