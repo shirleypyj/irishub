@@ -2,7 +2,7 @@
 
 ## 描述
 
-基于委托者地址，原源验证者地址和目标验证者地址的重新委托记录查询 
+基于委托者地址，源验证者地址和目标验证者地址的转委托记录查询 
 
 ## 用法
 
@@ -24,7 +24,7 @@ iriscli stake redelegation --help
 
 ## 示例
 
-查询重新委托记录
+查询转委托记录
 ```
 iriscli stake redelegation --address-validator-source=SourceValidatorAddress --address-validator-dest=DestinationValidatorAddress --address-delegator=DelegatorAddress
 ```
