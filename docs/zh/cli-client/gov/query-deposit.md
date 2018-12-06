@@ -2,7 +2,7 @@
 
 ## 描述
 
-查询保证金的充值明细
+查询押金的充值明细
 
 ## 使用方式
 
@@ -23,13 +23,13 @@ iriscli gov query-deposit --help
 
 ## 示例
 
-### 查询充值保证金
+### 查询充值押金
 
 ```shell
 iriscli gov query-deposit --chain-id=test --proposal-id=1 --depositor=faa1c4kjt586r3t353ek9jtzwxum9x9fcgwetyca07
 ```
 
-通过指定提议、指定抵押人查询保证金充值详情，得到结果如下：
+通过指定提议、指定抵押人查询押金充值详情，得到结果如下：
 
 ```txt
 {
