@@ -25,7 +25,7 @@ iriscli record download [record ID] [flags]
 | --record-id     |                            | [string] 存证ID                                            | 是       |
 | --trust-node    | true                       | 关闭响应结果校验                                            |          |
 
-## 例子
+## 示例
 
 ### 下载存证
 
