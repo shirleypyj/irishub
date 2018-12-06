@@ -22,7 +22,7 @@ iriscli gov vote --help
 | --option         |                            | [string] 投票选项 {Yes, No, NoWithVeto, Abstain}                                                                                                  | Yes      |
 | --proposal-id    |                            | [string] 投票的提议ID                                                                                                            | Yes      |
 
-## 例子
+## 示例
 
 ### 给提议投票
 
@@ -30,8 +30,8 @@ iriscli gov vote --help
 iriscli gov vote --chain-id=test --proposal-id=1 --option=Yes --from node0 --fee=0.01iris
 ```
 
-输入正确的密码之后，你就完成了对于所指定的提议投票。
-注意：验证人和委托人才能对指定提议投票，并且可投票的提议必须是'VotingPeriod'状态。
+输入正确的密码，完成对于所指定的提议投票。
+注意：只有验证人和委托人才能对指定提议投票，并且可投票的提议必须是'VotingPeriod'状态。
 
 ```txt
 Vote[Voter:faa14q5rf9sl2dqd2uxrxykafxq3nu3lj2fp9l7pgd,ProposalID:1,Option:Yes]Password to sign with 'node0':
