@@ -2,7 +2,7 @@
 
 ## 描述
 
-提交区块链治理提议以及发起提议所涉及的初始保证金，其中提议的类型包括Text/ParameterChange/SoftwareUpgrade这三种类型。
+提交区块链治理提议以及发起提议所涉及的初始押金，其中提议的类型包括Text/ParameterChange/SoftwareUpgrade这三种类型。
 
 ## 使用方式
 
@@ -18,7 +18,7 @@ iriscli gov submit-proposal --help
 
 | 名称, 速记        | 默认值                      | 描述                                                                                                                                                 | 是否必须  |
 | ---------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| --deposit        |                            | [string] 提议的保证金                                                                                                                         |          |
+| --deposit        |                            | [string] 提议的押金                                                                                                                         |          |
 | --description    |                            | [string] 提议的描述                                                                                                           | Yes      |
 | --key            |                            | 参数的键名称                                                                                                                        |          |
 | --op             |                            | [string] 对参数的操作                                                                                                             |          |
@@ -27,7 +27,7 @@ iriscli gov submit-proposal --help
 | --title          |                            | [string] 提议标题                                                                                                                           | Yes      |
 | --type           |                            | [string] 提议类型,例如:Text/ParameterChange/SoftwareUpgrade                                                                            | Yes      |
 
-## 例子
+## 示例
 
 ### 提交一个'Text'类型的提议
 
@@ -35,7 +35,7 @@ iriscli gov submit-proposal --help
 iriscli gov submit-proposal --chain-id=test --title="notice proposal" --type=Text --description="a new text proposal" --from=node0 --fee=0.01iris
 ```
 
-输入正确的密码之后，你就完成提交了一个提议，需要注意的是要记下你的提议ID，这是可以检索你的提议的唯一要素。
+输入正确的密码，完成提议的提交，切记要记下你的提议ID，这是检索你的提议的唯一要素。
 
 ```txt
 Password to sign with 'node0':
@@ -67,7 +67,7 @@ iriscli gov submit-proposal --chain-id=test --title="update MinDeposit proposal"
 iriscli gov submit-proposal --chain-id=test --title="irishub0.7.0 upgrade proposal" --type=SoftwareUpgrade --description="a new software upgrade proposal" --from=node0 --fee=0.01iris
 ```
 
-在这种场景下，提议的 --title、--type 和--description参数必不可少，另外你也应该保留好提议ID，这是检索所提交提议的唯一方法。
+在这种情况下，提议的 --title、--type 和--description参数必不可少，另外你也应该保留好提议ID，这是检索所提交提议的唯一方法。
 
 
 如何查询提议详情？
