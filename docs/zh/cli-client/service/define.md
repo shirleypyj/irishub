@@ -28,7 +28,7 @@ iriscli service define [flags]
 ```shell
 iriscli service define --chain-id=test  --from=node0 --fee=0.004iris --service-name=test-service --service-description=service-description --author-description=author-description --tags=tag1,tag2 --idl-content=<idl-content> --file=test.proto
 ```
-如果文件项不是空的，将会替换Idl-content.  [IDL内容示例](#idl-content-example).
+如果文件项不是空的，将会替换Idl-content.  [IDL内容示例](#idl内容示例).
 
 运行成功以后，返回的结果如下:
 
