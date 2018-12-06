@@ -30,7 +30,7 @@ iriscli gov query-deposit --help
 iriscli gov query-deposit --chain-id=test --proposal-id=1 --depositor=faa1c4kjt586r3t353ek9jtzwxum9x9fcgwetyca07
 ```
 
-You could query the deposited tokens on a specific proposal.
+You could query specific deposited tokens by a specific proposal ID and a specific depositor.
 
 ```txt
 {
