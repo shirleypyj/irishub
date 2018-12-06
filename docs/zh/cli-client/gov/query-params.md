@@ -21,7 +21,7 @@ iriscli gov query-params --help
 | --key           |                            | [string] 参数的键名称                                                                                                                       |          |
 | --module        |                            | [string] 模块名称                                                                                                                                 |          |
 
-## 例子
+## 示例
  
 ### 通过module查参数
 
@@ -51,4 +51,4 @@ iriscli gov query-params --key=Gov/govDepositProcedure
 {"key":"Gov/govDepositProcedure","value":"{\"min_deposit\":[{\"denom\":\"iris-atto\",\"amount\":\"1000000000000000000000\"}],\"max_deposit_period\":172800000000000}","op":""}
 ```
 
-注意：--module和--key参数不能同时为空.
+注意：--module和--key参数不能同时为空。
