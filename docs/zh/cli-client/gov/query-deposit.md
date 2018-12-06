@@ -21,7 +21,7 @@ iriscli gov query-deposit --help
 | --depositor     |                       | [string] bech32编码的存款人地址                                                                                                                    | Yes      |
 | --proposal-id   |                       | [string] 提议ID                                                                                                        | Yes      |
 
-## 例子
+## 示例
 
 ### 查询充值保证金
 
@@ -29,7 +29,7 @@ iriscli gov query-deposit --help
 iriscli gov query-deposit --chain-id=test --proposal-id=1 --depositor=faa1c4kjt586r3t353ek9jtzwxum9x9fcgwetyca07
 ```
 
-通过指定提议、指定存款人查询保证金充值详情，得到结果如下：
+通过指定提议、指定抵押人查询保证金充值详情，得到结果如下：
 
 ```txt
 {
