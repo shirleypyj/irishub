@@ -20,7 +20,7 @@ iriscli gov pull-params --help
 | --------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | --path          | $HOME/.iriscli                | [string] iriscli home目录                                                                                                                      
 
-## 例子
+## 示例
 
 ### 生成参数文件
 
@@ -34,7 +34,7 @@ iriscli gov pull-params
 Save the parameter config file in  /Users/trevorfu/.iriscli/params.json
 ```
 
-打开--path/目录下的params.json文件，你可以看到json格式的文件内容。
+打开--path/目录下的params.json文件，你可以看到json文件的内容。
 
 ```txt
 {
