@@ -29,7 +29,7 @@ iriscli gov query-deposit --help
 iriscli gov query-deposit --chain-id=test --proposal-id=1 --depositor=faa1c4kjt586r3t353ek9jtzwxum9x9fcgwetyca07
 ```
 
-通过指定提议、指定抵押人查询押金充值详情，得到结果如下：
+通过指定提议ID、指定抵押人查询押金充值详情，得到结果如下：
 
 ```txt
 {
