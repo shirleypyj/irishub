@@ -36,7 +36,7 @@ iriscli record submit [flags]
 | --sequence       |                            | [int] 用来签名交易的sequence number                                                  |          |
 | --trust-node     | true                       | 关闭响应结果校验                                                                     |          |
 
-## 例子
+## 示例
 
 ### 提交存证
 
