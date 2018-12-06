@@ -23,7 +23,7 @@ iriscli gov query-proposals --help
 | --status        |                            | [string] （可选）按提议状态过滤提议                                                                                                        |          |
 | --voter         |                            | [string] （可选）按投票人过滤                                                                                            |          |
 
-## 例子
+## 示例
 
 ### 查询提议
 
@@ -44,7 +44,7 @@ iriscli gov query-proposals --chain-id=test
 gov query-proposals --chain-id=test --depositor=faa14q5rf9sl2dqd2uxrxykafxq3nu3lj2fp9l7pgd
 ```
 
-可以得到存款人是faa14q5rf9sl2dqd2uxrxykafxq3nu3lj2fp9l7pgd地址的提议。
+可以得到抵押人地址为faa14q5rf9sl2dqd2uxrxykafxq3nu3lj2fp9l7pgd的提议。
 ```txt
   2 - new proposal
 ```
