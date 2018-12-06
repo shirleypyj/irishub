@@ -22,9 +22,9 @@ iriscli gov deposit --help
 | --deposit        |                            | [string] 发起提议的保证金                                                                                                                         | Yes      |
 | --proposal-id    |                            | [string] 充值保证金的提议ID                                                                                                        | Yes      |
 
-## 例子
+## 示例
 
-### 充值保证金
+### 充值押金
 
 ```shell
 iriscli gov deposit --chain-id=test --proposal-id=1 --deposit=50iris --from=node0 --fee=0.01iris
@@ -45,7 +45,7 @@ Committed at block 473 (tx hash: 0309E969589F19A9D9E4BFC9479720487FBF929ED6A8882
  }
 ```
 
-如何查询保证金充值明细？
+如何查询押金充值明细？
 
 请点击下述链接：
 
