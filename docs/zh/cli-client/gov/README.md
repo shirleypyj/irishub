@@ -28,8 +28,8 @@ iriscli distribution --help
 | [query-proposals](query-proposals.md) | 通过可选过滤器查询提议                                             |
 | [query-vote](query-vote.md)           | 查询投票信息                                                      |
 | [query-votes](query-votes.md)         | 查询提议的投票情况                                                 |
-| [query-deposit](query-deposit.md)     | 查询保证金详情                                                    |
-| [query-deposits](query-deposits.md)   | 查询提议的保证金                                                  |
+| [query-deposit](query-deposit.md)     | 查询押金详情                                                    |
+| [query-deposits](query-deposits.md)   | 查询提议的押金                                                  |
 | [query-tally](query-tally.md)         | 查询提议投票的统计                                                 |
 | [query-params](query-params.md)       | 查询参数提议的配置                                                 |
 | [pull-params](pull-params.md)         | 生成param.json文件                                               |
