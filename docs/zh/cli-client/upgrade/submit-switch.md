@@ -4,7 +4,7 @@
 
 安装完新软件后，向这次升级相关的提议发送switch消息，表明自己已经安装新软件并把消息广播到全网。
 
-## 用例
+## 使用方式
 
 ```
 iriscli upgrade submit-switch [flags]
