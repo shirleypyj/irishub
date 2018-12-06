@@ -4,7 +4,7 @@
 
 查询switch信息已确认某人对某升级提议是否发送了switch消息。
 
-## 用例
+## 使用方式
 
 ```
 iriscli upgrade query-switch --proposalID <proposalID> --voter <voter address>
