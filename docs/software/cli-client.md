@@ -2,7 +2,7 @@
 
 ## Introduction
 
-`iriscli` is a client for the IRISnet network. IRISnet users can use `iriscli` to send different transactions and query the blockchain data.
+`iriscli` is a client for IRIS Network. IRISnet users can use `iriscli` to send different transactions and query the blockchain data.
 
 ## iriscli Work Directory
 
