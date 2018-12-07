@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The iris executable is the entry point for running a IRISnet network node. All the validator nodes and full nodes need to install the iris command and launching the daemon to join the IRISnet network. You can also use this command to start your own test network locally. If you need to join the IRISnet testnet, please refer to [get-started](../get-started/README.md).
+The iris executable is the entry point for running an IRIS Network node. All the validator nodes and full nodes need to install the iris command and launch the daemon to join IRIS Network. You can also use this command to start your own testnet locally. If you need to join IRIS testnet, please refer to [get-started](../get-started/README.md).
 
-## How to start an IRISnet network locally
+## How to start an IRIS Network locally
 
 ### Initialize node
 
-First you need to create a account as the corresponding validator operator for yourself.
+First you need to create an account as the corresponding validator operator for yourself.
 ```bash
 iriscli keys add {account_name}
 ```
@@ -59,7 +59,7 @@ iris add-genesis-account faa13t6jugwm5uu3h835s5d4zggkklz6rpns59keju 150iris
     }
 ```
 
-Configuring validator information
+Configure validator information
 ```bash
 iris collect-gentxs --home={path_to_your_home}
 ```
