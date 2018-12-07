@@ -1,7 +1,7 @@
 # How to deploy IRIS Monitor
 
 ## Install IRIS Monitor 
-Please refer to this [document](https://github.com/irisnet/irishub/blob/master/docs/get-started/Install-Iris.md) for deatiled instructions. Besides, please make sure your machine has these commands(bash, wc, ps) installed.
+Please refer to this [document](https://github.com/irisnet/irishub/blob/master/docs/get-started/Install-Iris.md) for detailed instructions. Besides, please make sure your machine has these commands(bash, wc, ps) installed.
 
 ## Start IRIS Monitor
 
